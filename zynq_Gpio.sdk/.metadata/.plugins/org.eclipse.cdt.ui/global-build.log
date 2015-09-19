@@ -1,0 +1,144 @@
+15:36:53 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+make: Nothing to be done for `all'.
+15:36:58 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+make: Nothing to be done for `all'.
+15:37:57 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+make: Nothing to be done for `all'.
+15:38:03 **** Auto Build of configuration Debug for project gpio_led ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gpio_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: gpio_led.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_led_bsp/ps7_cortexa9_0/lib -o "gpio_led.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_led.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size gpio_led.elf  |tee "gpio_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26392	   1168	  22596	  50156	   c3ec	gpio_led.elf
+Finished building: gpio_led.elf.size
+ 
+15:38:08 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+make: Nothing to be done for `all'.
+15:38:48 **** Auto Build of configuration Debug for project gpio_led ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gpio_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: gpio_led.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_led_bsp/ps7_cortexa9_0/lib -o "gpio_led.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_led.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size gpio_led.elf  |tee "gpio_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26408	   1168	  22596	  50172	   c3fc	gpio_led.elf
+Finished building: gpio_led.elf.size
+ 
+15:38:50 **** Auto Build of configuration Debug for project gpio_led ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gpio_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: gpio_led.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_led_bsp/ps7_cortexa9_0/lib -o "gpio_led.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_led.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size gpio_led.elf  |tee "gpio_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26408	   1168	  22596	  50172	   c3fc	gpio_led.elf
+Finished building: gpio_led.elf.size
+ 
+15:39:57 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gpio_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: gpio_led.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_led_bsp/ps7_cortexa9_0/lib -o "gpio_led.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_led.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size gpio_led.elf  |tee "gpio_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26408	   1168	  22596	  50172	   c3fc	gpio_led.elf
+Finished building: gpio_led.elf.size
+ 
+15:42:58 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gpio_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: gpio_led.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_led_bsp/ps7_cortexa9_0/lib -o "gpio_led.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_led.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size gpio_led.elf  |tee "gpio_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26408	   1168	  22596	  50172	   c3fc	gpio_led.elf
+Finished building: gpio_led.elf.size
+ 
+15:43:45 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+make: Nothing to be done for `all'.
+16:25:16 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+make: Nothing to be done for `all'.
+16:26:48 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+make: Nothing to be done for `all'.
+16:27:33 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+make: Nothing to be done for `all'.
+16:30:41 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+make: Nothing to be done for `all'.
+16:32:07 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+make: Nothing to be done for `all'.
+16:33:28 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+make: Nothing to be done for `all'.
+16:36:56 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gpio_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: gpio_led.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_led_bsp/ps7_cortexa9_0/lib -o "gpio_led.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_led.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size gpio_led.elf  |tee "gpio_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26408	   1168	  22596	  50172	   c3fc	gpio_led.elf
+Finished building: gpio_led.elf.size
+ 
+16:37:00 **** Incremental Build of configuration Debug for project gpio_led ****
+make all 
+make: Nothing to be done for `all'.

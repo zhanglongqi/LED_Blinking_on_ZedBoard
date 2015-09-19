@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2.1 (64-bit)
+# SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
+# IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
+# Start of session at: Fri Sep 18 10:19:22 2015
+# Process ID: 3009
+# Log file: /home/longqi/zynq_Gpio/zynq_Gpio.runs/impl_1/design_gpio_led_wrapper.vdi
+# Journal file: /home/longqi/zynq_Gpio/zynq_Gpio.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source design_gpio_led_wrapper.tcl -notrace

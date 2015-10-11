@@ -32,4 +32,5 @@
 *.dSYM/
 
 *.log
-zynq_Gpio.sdk/.metadata
+
+zynq_Gpio.sdk\.metadata

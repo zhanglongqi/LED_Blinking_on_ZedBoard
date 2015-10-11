@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# 
+# Start of session at: Fri Sep 18 12:33:46 2015
+# Process ID: 6179
+# Log file: /home/longqi/zynq_Gpio/zynq_Gpio.sdk/webtalk/webtalk.log
+# Journal file: /home/longqi/zynq_Gpio/zynq_Gpio.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

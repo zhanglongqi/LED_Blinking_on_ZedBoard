@@ -499,3 +499,14 @@ dismissDialog("Launch SDK"); // J:ag (cl:JFrame)
 // Tcl Message: launch_sdk -workspace D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk -hwspec D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk/design_gpio_led_wrapper.hdf 
 // Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk -hwspec D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk/design_gpio_led_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
 // HMemoryUtils.trashcanNow. Engine heap size: 1,348 MB. GUI used memory: 70 MB. Current time: 10/11/15 4:41:56 PM SGT
+// Elapsed time: 1472 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New Project..."); // ab:JMenuItem (JPopupMenu:JComponent, cl:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// a:g (cl:JFrame): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:g)
+setText(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, "D:/Desktop"); // ao:JTextField (aS:JPanel, a:g)
+// Elapsed time: 17 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "mas25_clone"); // ao:JTextField (JPanel:JComponent, a:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,349 MB. GUI used memory: 73 MB. Current time: 10/11/15 5:11:56 PM SGT

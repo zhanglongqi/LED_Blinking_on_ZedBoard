@@ -19,3 +19,5 @@ wait_on_run impl_1
 file copy -force D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.runs/impl_1/design_gpio_led_wrapper.sysdef D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk/design_gpio_led_wrapper.hdf
 
 launch_sdk -workspace D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk -hwspec D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk/design_gpio_led_wrapper.hdf
+open_bd_design {D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/design_gpio_led.bd}
+regenerate_bd_layout

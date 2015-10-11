@@ -13,8 +13,9 @@ set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.cache/wt [current_project]
 set_property parent.project_path D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language Verilog [current_project]
+set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:0.9 [current_project]
+set_property ip_repo_paths d:/Desktop/LED_Blinking_on_ZedBoard/ip_repo [current_project]
 add_files D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/design_gpio_led.bd
 set_property used_in_implementation false [get_files -all d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/design_gpio_led_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/design_gpio_led_axi_gpio_0_0_board.xdc]

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2.1 (64-bit)
+# SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
+# IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
+# Start of session at: Sun Oct 11 22:29:21 2015
+# Process ID: 46600
+# Log file: d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.tmp/my_multiplier_v1_0_v1_0_project/my_multiplier_v1_0_v1_0_project.runs/synth_1/my_multiplier_v1_0.vds
+# Journal file: d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.tmp/my_multiplier_v1_0_v1_0_project/my_multiplier_v1_0_v1_0_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source my_multiplier_v1_0.tcl -notrace

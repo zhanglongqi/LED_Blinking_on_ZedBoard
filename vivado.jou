@@ -2,22 +2,125 @@
 # Vivado v2015.2.1 (64-bit)
 # SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
 # IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
-# Start of session at: Sun Oct 11 16:31:56 2015
-# Process ID: 38716
+# Start of session at: Sun Oct 11 17:39:36 2015
+# Process ID: 26504
 # Log file: D:/Desktop/LED_Blinking_on_ZedBoard/vivado.log
 # Journal file: D:/Desktop/LED_Blinking_on_ZedBoard\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.xpr
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-open_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-file copy -force D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.runs/impl_1/design_gpio_led_wrapper.sysdef D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk/design_gpio_led_wrapper.hdf
-
-launch_sdk -workspace D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk -hwspec D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk/design_gpio_led_wrapper.hdf
+create_peripheral xilinx.com user my_multiplier 1.0 -dir D:/Desktop/ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:my_multiplier:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:my_multiplier:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:my_multiplier:1.0]
+set_property  ip_repo_paths  D:/Desktop/ip_repo/my_multiplier_1.0 [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_my_multiplier_v1_0 -directory D:/Desktop/ip_repo d:/Desktop/ip_repo/my_multiplier_1.0/component.xml
+update_compile_order -fileset sim_1
+current_project zynq_Gpio
 open_bd_design {D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/design_gpio_led.bd}
-regenerate_bd_layout
+current_project edit_my_multiplier_v1_0
+add_files -norecurse -scan_for_includes -copy_to D:/Desktop/ip_repo/my_multiplier_1.0/src D:/Desktop/multiplier.vhd
+update_compile_order -fileset sources_1
+file mkdir D:/Desktop/ip_repo/edit_my_multiplier_v1_0.srcs/sources_1/new
+close [ open d:/desktop/ip_repo/edit_my_multiplier_v1_0.srcs/sources_1/new/my_multiplier_v1_0_S00_AXI.vhd w ]
+add_files d:/desktop/ip_repo/edit_my_multiplier_v1_0.srcs/sources_1/new/my_multiplier_v1_0_S00_AXI.vhd
+update_compile_order -fileset sources_1
+remove_files d:/desktop/ip_repo/my_multiplier_1.0/hdl/my_multiplier_v1_0_S00_AXI.v
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::add_file_group -type vhdl:synthesis  [ipx::current_core]
+ipx::add_file src/multiplier.vhd [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]
+ipx::add_file d:/desktop/ip_repo/edit_my_multiplier_v1_0.srcs/sources_1/new/my_multiplier_v1_0_S00_AXI.vhd [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]
+ipx::add_file hdl/my_multiplier_v1_0.v [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]
+ipx::remove_file_group xilinx_verilogsynthesis [ipx::current_core]
+ipx::copy_contents_from [ipx::get_file_groups xilinx_verilogbehavioralsimulation -of_objects [ipx::current_core]] [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]
+remove_files d:/desktop/ip_repo/my_multiplier_1.0/hdl/my_multiplier_v1_0.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::add_file_group -type vhdl:simulation  [ipx::current_core]
+ipx::add_file src/multiplier.vhd [ipx::get_file_groups xilinx_vhdlbehavioralsimulation -of_objects [ipx::current_core]]
+ipx::add_file d:/desktop/ip_repo/edit_my_multiplier_v1_0.srcs/sources_1/new/my_multiplier_v1_0_S00_AXI.vhd [ipx::get_file_groups xilinx_vhdlbehavioralsimulation -of_objects [ipx::current_core]]
+ipx::remove_file_group xilinx_verilogbehavioralsimulation [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+launch_runs synth_1
+wait_on_run synth_1
+current_project zynq_Gpio
+current_project edit_my_multiplier_v1_0
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+close_project
+create_peripheral xilinx.com user myip 1.0 -dir D:/Desktop/ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:myip:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design -force [ipx::find_open_core xilinx.com:user:myip:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:myip:1.0]
+set_property  ip_repo_paths  {D:/Desktop/ip_repo/myip_1.0 D:/Desktop/ip_repo/my_multiplier_1.0} [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_myip_v1_0 -directory D:/Desktop/ip_repo d:/Desktop/ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sim_1
+close_project
+create_peripheral xilinx.com user myip 1.0 -dir D:/Desktop/ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:myip:1.0]
+generate_peripheral -driver -bfm_example_design -enable_interrupt -debug_hw_example_design [ipx::find_open_core xilinx.com:user:myip:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:myip:1.0]
+set_property  ip_repo_paths  {D:/Desktop/ip_repo/myip_1.0 D:/Desktop/ip_repo/myip_1.0 D:/Desktop/ip_repo/my_multiplier_1.0} [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_myip_v1_0 -directory D:/Desktop/ip_repo d:/Desktop/ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sim_1
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Desktop/ip_repo/myip_1.0
+update_ip_catalog -delete_ip xilinx.com:user:myip:1.0 -repo_path d:/Desktop/ip_repo/myip_1.0
+update_ip_catalog -rebuild
+create_ip -name my_multiplier -vendor xilinx.com -library user -version 1.0 -module_name my_multiplier_0
+generate_target {instantiation_template} [get_files d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ip/my_multiplier_0/my_multiplier_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ip/my_multiplier_0/my_multiplier_0.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ip/my_multiplier_0/my_multiplier_0.xci]
+launch_run -jobs 4 my_multiplier_0_synth_1
+remove_files -fileset my_multiplier_0 d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ip/my_multiplier_0/my_multiplier_0.xci
+delete_fileset my_multiplier_0
+file delete -force d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ip/my_multiplier_0
+ipx::edit_ip_in_project -upgrade true -name my_multiplier_v1_0_v1_0_project -directory D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.tmp/my_multiplier_v1_0_v1_0_project d:/Desktop/ip_repo/my_multiplier_1.0/component.xml
+update_compile_order -fileset sim_1
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Desktop/ip_repo/my_multiplier_1.0
+ipx::edit_ip_in_project -upgrade true -name my_multiplier_v1_0_v1_0_project -directory D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.tmp/my_multiplier_v1_0_v1_0_project d:/Desktop/ip_repo/my_multiplier_1.0/component.xml
+update_compile_order -fileset sim_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  d:/Desktop/ip_repo/my_multiplier_1.0 [current_project]
+update_ip_catalog
+create_run impl_2 -parent_run synth_1 -flow {Vivado Implementation 2015} -strategy {Vivado Implementation Defaults}
+current_run [get_runs impl_2]
+set_property target_language VHDL [current_project]
+create_peripheral xilinx.com user myip2 1.0 -dir D:/Desktop/ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:myip2:1.0]
+generate_peripheral -driver -bfm_example_design -enable_interrupt -debug_hw_example_design -force [ipx::find_open_core xilinx.com:user:myip2:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:myip2:1.0]
+set_property  ip_repo_paths  {D:/Desktop/ip_repo/myip2_1.0 d:/Desktop/ip_repo/my_multiplier_1.0} [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_myip2_v1_0 -directory D:/Desktop/ip_repo d:/Desktop/ip_repo/myip2_1.0/component.xml
+update_compile_order -fileset sim_1
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Desktop/ip_repo/myip2_1.0
+set_property  ip_repo_paths  {d:/Desktop/ip_repo/myip2_1.0 d:/Desktop/ip_repo/my_multiplier_1.0 D:/Desktop/LED_Blinking_on_ZedBoard/ip_repo} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  d:/Desktop/LED_Blinking_on_ZedBoard/ip_repo [current_project]
+update_ip_catalog
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2

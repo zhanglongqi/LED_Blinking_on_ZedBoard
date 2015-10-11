@@ -1,0 +1,153 @@
+#-----------------------------------------------------------
+# Vivado v2015.2.1 (64-bit)
+# SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
+# IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
+# Start of session at: Sun Oct 11 22:29:21 2015
+# Process ID: 46600
+# Log file: d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.tmp/my_multiplier_v1_0_v1_0_project/my_multiplier_v1_0_v1_0_project.runs/synth_1/my_multiplier_v1_0.vds
+# Journal file: d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.tmp/my_multiplier_v1_0_v1_0_project/my_multiplier_v1_0_v1_0_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source my_multiplier_v1_0.tcl -notrace
+Command: synth_design -top my_multiplier_v1_0 -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 262.781 ; gain = 86.016
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'my_multiplier_v1_0' [d:/desktop/ip_repo/my_multiplier_1.0/hdl/my_multiplier_v1_0.vhd:50]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'my_multiplier_v1_0_S00_AXI' declared at 'd:/desktop/ip_repo/my_multiplier_1.0/hdl/my_multiplier_v1_0_S00_AXI.vhd:6' bound to instance 'my_multiplier_v1_0_S00_AXI_inst' of component 'my_multiplier_v1_0_S00_AXI' [d:/desktop/ip_repo/my_multiplier_1.0/hdl/my_multiplier_v1_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'my_multiplier_v1_0_S00_AXI' [d:/desktop/ip_repo/my_multiplier_1.0/hdl/my_multiplier_v1_0_S00_AXI.vhd:87]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/desktop/ip_repo/my_multiplier_1.0/hdl/my_multiplier_v1_0_S00_AXI.vhd:228]
+INFO: [Synth 8-226] default block is never used [d:/desktop/ip_repo/my_multiplier_1.0/hdl/my_multiplier_v1_0_S00_AXI.vhd:361]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'd:/desktop/ip_repo/my_multiplier_1.0/src/multiplier.vhd:6' bound to instance 'multiplier_0' of component 'multiplier' [d:/desktop/ip_repo/my_multiplier_1.0/hdl/my_multiplier_v1_0_S00_AXI.vhd:396]
+INFO: [Synth 8-638] synthesizing module 'multiplier' [d:/desktop/ip_repo/my_multiplier_1.0/src/multiplier.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'multiplier' (1#1) [d:/desktop/ip_repo/my_multiplier_1.0/src/multiplier.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'my_multiplier_v1_0_S00_AXI' (2#1) [d:/desktop/ip_repo/my_multiplier_1.0/hdl/my_multiplier_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'my_multiplier_v1_0' (3#1) [d:/desktop/ip_repo/my_multiplier_1.0/hdl/my_multiplier_v1_0.vhd:50]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 297.063 ; gain = 120.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 297.063 ; gain = 120.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 297.063 ; gain = 120.297
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 304.457 ; gain = 127.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module my_multiplier_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 455.051 ; gain = 278.285
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP my_multiplier_v1_0_S00_AXI_inst/multiplier_0/p_reg, operation Mode is: (A*B)'.
+DSP Report: register my_multiplier_v1_0_S00_AXI_inst/multiplier_0/p_reg is absorbed into DSP my_multiplier_v1_0_S00_AXI_inst/multiplier_0/p_reg.
+DSP Report: operator my_multiplier_v1_0_S00_AXI_inst/multiplier_0/multOp is absorbed into DSP my_multiplier_v1_0_S00_AXI_inst/multiplier_0/p_reg.
+WARNING: [Synth 8-3331] design my_multiplier_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design my_multiplier_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design my_multiplier_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design my_multiplier_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design my_multiplier_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design my_multiplier_v1_0 has unconnected port s00_axi_arprot[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 456.309 ; gain = 279.543
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 456.309 ; gain = 279.543
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++------------+-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|multiplier  | (A*B)'      | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 1    | 0    | 
++------------+-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_multiplier_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_multiplier_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (\my_multiplier_v1_0_S00_AXI_inst/axi_bresp_reg[1] ) is unused and will be removed from module my_multiplier_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\my_multiplier_v1_0_S00_AXI_inst/axi_bresp_reg[0] ) is unused and will be removed from module my_multiplier_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\my_multiplier_v1_0_S00_AXI_inst/axi_araddr_reg[1] ) is unused and will be removed from module my_multiplier_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\my_multiplier_v1_0_S00_AXI_inst/axi_araddr_reg[0] ) is unused and will be removed from module my_multiplier_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\my_multiplier_v1_0_S00_AXI_inst/axi_awaddr_reg[1] ) is unused and will be removed from module my_multiplier_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\my_multiplier_v1_0_S00_AXI_inst/axi_awaddr_reg[0] ) is unused and will be removed from module my_multiplier_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\my_multiplier_v1_0_S00_AXI_inst/axi_rresp_reg[1] ) is unused and will be removed from module my_multiplier_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\my_multiplier_v1_0_S00_AXI_inst/axi_rresp_reg[0] ) is unused and will be removed from module my_multiplier_v1_0.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-729] Failed to open './.Xil/Vivado-46600-LQ/realtime/tmp\genlib.B5B6507C90.0': No such file or directory

@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.2.1 (lin64) Build 1302555 Wed Aug  5 13:06:02 MDT 2015
-| Date         : Fri Sep 18 10:19:21 2015
-| Host         : VB running 64-bit Ubuntu 14.04.3 LTS
+| Tool Version : Vivado v.2015.2.1 (win64) Build 1302555 Wed Aug  5 13:06:02 MDT 2015
+| Date         : Sun Oct 11 16:33:34 2015
+| Host         : LQ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_gpio_led_wrapper_utilization_synth.rpt -pb design_gpio_led_wrapper_utilization_synth.pb
 | Design       : design_gpio_led_wrapper
 | Device       : xc7z020

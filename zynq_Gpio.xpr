@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="5" Path="/home/longqi/zynq_Gpio/zynq_Gpio.xpr">
+<Project Version="7" Minor="5" Path="D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="58c0d2de268f431ebc0765b4b94db592"/>
@@ -29,10 +29,10 @@
         <CompFileExtendedInfo CompFileName="design_gpio_led.bd" FileRelPathName="hw_handoff/design_gpio_led.hwh"/>
         <CompFileExtendedInfo CompFileName="design_gpio_led.bd" FileRelPathName="design_gpio_led_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="design_gpio_led.bd" FileRelPathName="hdl/design_gpio_led.v"/>
+        <CompFileExtendedInfo CompFileName="design_gpio_led.bd" FileRelPathName="ip/design_gpio_led_processing_system7_0_0/design_gpio_led_processing_system7_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="design_gpio_led.bd" FileRelPathName="ip/design_gpio_led_auto_pc_0/design_gpio_led_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="design_gpio_led.bd" FileRelPathName="ip/design_gpio_led_rst_processing_system7_0_100M_1/design_gpio_led_rst_processing_system7_0_100M_1.xci"/>
         <CompFileExtendedInfo CompFileName="design_gpio_led.bd" FileRelPathName="ip/design_gpio_led_processing_system7_0_axi_periph_1/design_gpio_led_processing_system7_0_axi_periph_1.xci"/>
-        <CompFileExtendedInfo CompFileName="design_gpio_led.bd" FileRelPathName="ip/design_gpio_led_processing_system7_0_0/design_gpio_led_processing_system7_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="design_gpio_led.bd" FileRelPathName="ip/design_gpio_led_axi_gpio_0_0/design_gpio_led_axi_gpio_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/design_gpio_led/hdl/design_gpio_led_wrapper.v">
@@ -84,6 +84,9 @@
     </Simulator>
     <Simulator Name="Riviera">
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="9">

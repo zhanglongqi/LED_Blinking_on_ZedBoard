@@ -1,6 +1,6 @@
-16:37:00 **** Incremental Build of configuration Debug for project gpio_led ****
+16:43:15 **** Incremental Build of configuration Debug for project gpio_led ****
 make all 
 make: Nothing to be done for `all'.
 
-16:37:00 Build Finished (took 85ms)
+16:43:15 Build Finished (took 76ms)
 

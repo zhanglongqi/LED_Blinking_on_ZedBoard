@@ -50,7 +50,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   debug::add_scope template.lib 1
   open_checkpoint design_gpio_led_wrapper_routed.dcp
-  set_property webtalk.parent_dir /home/longqi/zynq_Gpio/zynq_Gpio.cache/wt [current_project]
+  set_property webtalk.parent_dir D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.cache/wt [current_project]
   write_bitstream -force design_gpio_led_wrapper.bit 
   catch { write_sysdef -hwdef design_gpio_led_wrapper.hwdef -bitfile design_gpio_led_wrapper.bit -meminfo design_gpio_led_wrapper.mmi -ltxfile debug_nets.ltx -file design_gpio_led_wrapper.sysdef }
   close_msg_db -file write_bitstream.pb

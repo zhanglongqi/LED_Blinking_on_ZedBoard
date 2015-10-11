@@ -2,29 +2,29 @@
 # Vivado v2015.2.1 (64-bit)
 # SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
 # IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
-# Start of session at: Fri Sep 18 10:18:31 2015
-# Process ID: 2948
-# Log file: /home/longqi/zynq_Gpio/zynq_Gpio.runs/synth_1/design_gpio_led_wrapper.vds
-# Journal file: /home/longqi/zynq_Gpio/zynq_Gpio.runs/synth_1/vivado.jou
+# Start of session at: Sun Oct 11 16:32:19 2015
+# Process ID: 25240
+# Log file: D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.runs/synth_1/design_gpio_led_wrapper.vds
+# Journal file: D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_gpio_led_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/App/Xilinx/Vivado/2015.2/data/ip'.
 Command: synth_design -top design_gpio_led_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 962.484 ; gain = 179.438 ; free physical = 5996 ; free virtual = 7001
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 305.191 ; gain = 128.395
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_gpio_led_wrapper' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led_wrapper.v:12]
-INFO: [Synth 8-638] synthesizing module 'design_gpio_led' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:13]
-INFO: [Synth 8-638] synthesizing module 'GND' [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:3854]
-INFO: [Synth 8-256] done synthesizing module 'GND' (1#1) [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:3854]
-INFO: [Synth 8-638] synthesizing module 'VCC' [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:35496]
-INFO: [Synth 8-256] done synthesizing module 'VCC' (2#1) [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:35496]
-INFO: [Synth 8-638] synthesizing module 'design_gpio_led_axi_gpio_0_0' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/synth/design_gpio_led_axi_gpio_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_gpio_led_wrapper' [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_gpio_led' [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:13]
+INFO: [Synth 8-638] synthesizing module 'GND' [D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:3854]
+INFO: [Synth 8-256] done synthesizing module 'GND' (1#1) [D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:3854]
+INFO: [Synth 8-638] synthesizing module 'VCC' [D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:35496]
+INFO: [Synth 8-256] done synthesizing module 'VCC' (2#1) [D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:35496]
+INFO: [Synth 8-638] synthesizing module 'design_gpio_led_axi_gpio_0_0' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/synth/design_gpio_led_axi_gpio_0_0.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -40,8 +40,8 @@ INFO: [Synth 8-638] synthesizing module 'design_gpio_led_axi_gpio_0_0' [/home/lo
 	Parameter C_IS_DUAL bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
 	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
-INFO: [Synth 8-3491] module 'axi_gpio' declared at '/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:189' bound to instance 'U0' of component 'axi_gpio' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/synth/design_gpio_led_axi_gpio_0_0.vhd:163]
-INFO: [Synth 8-638] synthesizing module 'axi_gpio' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:282]
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'd:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:189' bound to instance 'U0' of component 'axi_gpio' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/synth/design_gpio_led_axi_gpio_0_0.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:282]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -57,9 +57,9 @@ INFO: [Synth 8-638] synthesizing module 'axi_gpio' [/home/longqi/zynq_Gpio/zynq_
 	Parameter C_IS_DUAL bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
 	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:219]
-INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:220]
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/axi_lite_ipif.vhd:249]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:219]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/axi_lite_ipif.vhd:249]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000111111111 
@@ -68,7 +68,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/longqi/zynq_Gpio/
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/slave_attachment.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/slave_attachment.vhd:239]
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
 	Parameter C_IPIF_ABUS_WIDTH bound to: 9 - type: integer 
@@ -77,42 +77,42 @@ INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/longqi/zynq_Gp
 	Parameter C_USE_WSTRB bound to: 0 - type: integer 
 	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/address_decoder.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/address_decoder.vhd:190]
 	Parameter C_BUS_AWIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b00 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (3#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (3#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b01 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (3#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (3#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b10 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (3#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (3#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b11 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (3#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (4#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/address_decoder.vhd:190]
-INFO: [Synth 8-226] default block is never used [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/slave_attachment.vhd:448]
-INFO: [Synth 8-4512] found unpartitioned construct node [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/slave_attachment.vhd:417]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (5#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/slave_attachment.vhd:239]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (6#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/axi_lite_ipif.vhd:249]
-INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/gpio_core.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (3#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/pselect_f.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (4#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/address_decoder.vhd:190]
+INFO: [Synth 8-226] default block is never used [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/slave_attachment.vhd:448]
+INFO: [Synth 8-4512] found unpartitioned construct node [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/slave_attachment.vhd:417]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (5#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/slave_attachment.vhd:239]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (6#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/876b8fe4/hdl/src/vhdl/axi_lite_ipif.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/gpio_core.vhd:173]
 	Parameter C_DW bound to: 32 - type: integer 
 	Parameter C_AW bound to: 9 - type: integer 
 	Parameter C_GPIO_WIDTH bound to: 8 - type: integer 
@@ -125,8 +125,8 @@ INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [/home/longqi/zynq_Gpio/zynq
 	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
 	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-226] default block is never used [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/gpio_core.vhd:346]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
+INFO: [Synth 8-226] default block is never used [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/gpio_core.vhd:346]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 0 - type: integer 
@@ -134,107 +134,107 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/longqi/zynq_Gpio/zynq_
 	Parameter C_VECTOR_WIDTH bound to: 8 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (7#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (8#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/gpio_core.vhd:173]
-INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (9#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:282]
-INFO: [Synth 8-256] done synthesizing module 'design_gpio_led_axi_gpio_0_0' (10#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/synth/design_gpio_led_axi_gpio_0_0.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'design_gpio_led_processing_system7_0_0' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/synth/design_gpio_led_processing_system7_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (7#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (8#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/gpio_core.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (9#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:282]
+INFO: [Synth 8-256] done synthesizing module 'design_gpio_led_axi_gpio_0_0' (10#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/synth/design_gpio_led_axi_gpio_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_gpio_led_processing_system7_0_0' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/synth/design_gpio_led_processing_system7_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
 	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
 	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
@@ -289,22 +289,22 @@ INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_syst
 	Parameter C_USE_S_AXI_GP0 bound to: 0 - type: integer 
 	Parameter C_USE_S_AXI_GP1 bound to: 0 - type: integer 
 	Parameter C_USE_S_AXI_ACP bound to: 0 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1350]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1351]
-INFO: [Synth 8-638] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:607]
-INFO: [Synth 8-256] done synthesizing module 'BUFG' (11#1) [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:607]
-INFO: [Synth 8-638] synthesizing module 'BIBUF' [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:268]
-INFO: [Synth 8-256] done synthesizing module 'BIBUF' (12#1) [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:268]
-INFO: [Synth 8-638] synthesizing module 'PS7' [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:26467]
-INFO: [Synth 8-256] done synthesizing module 'PS7' (13#1) [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:26467]
-INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (14#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
-WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/synth/design_gpio_led_processing_system7_0_0.v:346]
-INFO: [Synth 8-256] done synthesizing module 'design_gpio_led_processing_system7_0_0' (15#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/synth/design_gpio_led_processing_system7_0_0.v:57]
-WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'design_gpio_led_processing_system7_0_0' requires 78 connections, but only 63 given [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:169]
-INFO: [Synth 8-638] synthesizing module 'design_gpio_led_processing_system7_0_axi_periph_1' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:305]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_8NEXE' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:610]
-INFO: [Synth 8-638] synthesizing module 'design_gpio_led_auto_pc_0' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_auto_pc_0/synth/design_gpio_led_auto_pc_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1350]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1351]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (11#1) [D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BIBUF' [D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-256] done synthesizing module 'BIBUF' (12#1) [D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-638] synthesizing module 'PS7' [D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:26467]
+INFO: [Synth 8-256] done synthesizing module 'PS7' (13#1) [D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:26467]
+INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (14#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
+WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/synth/design_gpio_led_processing_system7_0_0.v:346]
+INFO: [Synth 8-256] done synthesizing module 'design_gpio_led_processing_system7_0_0' (15#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/synth/design_gpio_led_processing_system7_0_0.v:57]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'design_gpio_led_processing_system7_0_0' requires 78 connections, but only 63 given [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:169]
+INFO: [Synth 8-638] synthesizing module 'design_gpio_led_processing_system7_0_axi_periph_1' [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:305]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_8NEXE' [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:610]
+INFO: [Synth 8-638] synthesizing module 'design_gpio_led_auto_pc_0' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_auto_pc_0/synth/design_gpio_led_auto_pc_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_M_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: 1 - type: integer 
@@ -330,14 +330,14 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protoco
 	Parameter P_SLVERR bound to: 2'b10 
 	Parameter P_PROTECTION bound to: 1 - type: integer 
 	Parameter P_CONVERSION bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
 	Parameter C_S_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_SUPPORTS_WRITE bound to: 1 - type: integer 
 	Parameter C_AXI_SUPPORTS_READ bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axi_register_slice' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axi_register_slice' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
@@ -430,7 +430,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axi_register_sl
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_axi2vector' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_axi2vector' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -522,28 +522,28 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_axi2vector' [/h
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_axi2vector' (16#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_axi2vector' (16#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 66 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice' (17#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized0' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice' (17#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized0' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 49 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized0' (17#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized1' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized0' (17#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized1' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 14 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized1' (17#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized2' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized1' (17#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized2' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 47 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized2' (17#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_vector2axi' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized2' (17#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_vector2axi' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -635,34 +635,34 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_vector2axi' [/h
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_vector2axi' (18#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axi_register_slice' (19#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_aw_channel' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v:5]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_vector2axi' (18#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axi_register_slice' (19#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_aw_channel' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v:5]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_cmd_translator' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v:17]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_cmd_translator' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v:17]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter P_AXBURST_FIXED bound to: 2'b00 
 	Parameter P_AXBURST_INCR bound to: 2'b01 
 	Parameter P_AXBURST_WRAP bound to: 2'b10 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_incr_cmd' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v:11]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_incr_cmd' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v:11]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_incr_cmd' (20#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v:11]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_wrap_cmd' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v:11]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_incr_cmd' (20#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v:11]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_wrap_cmd' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v:11]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_wrap_cmd' (21#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v:11]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_cmd_translator' (22#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v:17]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_wr_cmd_fsm' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:10]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_wrap_cmd' (21#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v:11]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_cmd_translator' (22#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v:17]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_wr_cmd_fsm' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:10]
 	Parameter SM_IDLE bound to: 2'b00 
 	Parameter SM_CMD_EN bound to: 2'b01 
 	Parameter SM_CMD_ACCEPTED bound to: 2'b10 
 	Parameter SM_DONE_WAIT bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:64]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_wr_cmd_fsm' (23#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:10]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_aw_channel' (24#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v:5]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_b_channel' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v:10]
+INFO: [Synth 8-226] default block is never used [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_wr_cmd_fsm' (23#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:10]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_aw_channel' (24#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v:5]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_b_channel' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v:10]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter LP_RESP_OKAY bound to: 2'b00 
 	Parameter LP_RESP_EXOKAY bound to: 2'b01 
@@ -674,7 +674,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_b_chann
 	Parameter P_RWIDTH bound to: 2 - type: integer 
 	Parameter P_RDEPTH bound to: 4 - type: integer 
 	Parameter P_RAWIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
 	Parameter C_WIDTH bound to: 20 - type: integer 
 	Parameter C_AWIDTH bound to: 2 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
@@ -682,8 +682,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_
 	Parameter C_EMPTY_PRE bound to: 2'b00 
 	Parameter C_FULL bound to: 2'b10 
 	Parameter C_FULL_PRE bound to: 2'b01 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo' (25#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized0' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo' (25#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized0' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
 	Parameter C_WIDTH bound to: 2 - type: integer 
 	Parameter C_AWIDTH bound to: 2 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
@@ -691,20 +691,20 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_
 	Parameter C_EMPTY_PRE bound to: 2'b00 
 	Parameter C_FULL bound to: 2'b10 
 	Parameter C_FULL_PRE bound to: 2'b01 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized0' (25#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_b_channel' (26#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v:10]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_ar_channel' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v:5]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized0' (25#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_b_channel' (26#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v:10]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_ar_channel' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v:5]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_rd_cmd_fsm' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:10]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_rd_cmd_fsm' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:10]
 	Parameter SM_IDLE bound to: 2'b00 
 	Parameter SM_CMD_EN bound to: 2'b01 
 	Parameter SM_CMD_ACCEPTED bound to: 2'b10 
 	Parameter SM_DONE bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:72]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_rd_cmd_fsm' (27#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:10]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_ar_channel' (28#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v:5]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_r_channel' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v:21]
+INFO: [Synth 8-226] default block is never used [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:72]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_rd_cmd_fsm' (27#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:10]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_ar_channel' (28#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v:5]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_r_channel' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v:21]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter P_WIDTH bound to: 13 - type: integer 
@@ -713,7 +713,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_r_chann
 	Parameter P_D_WIDTH bound to: 34 - type: integer 
 	Parameter P_D_DEPTH bound to: 32 - type: integer 
 	Parameter P_D_AWIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized1' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized1' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
 	Parameter C_WIDTH bound to: 34 - type: integer 
 	Parameter C_AWIDTH bound to: 5 - type: integer 
 	Parameter C_DEPTH bound to: 32 - type: integer 
@@ -721,8 +721,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_
 	Parameter C_EMPTY_PRE bound to: 5'b00000 
 	Parameter C_FULL bound to: 5'b11110 
 	Parameter C_FULL_PRE bound to: 5'b11010 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized1' (28#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized2' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized1' (28#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized2' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
 	Parameter C_WIDTH bound to: 13 - type: integer 
 	Parameter C_AWIDTH bound to: 5 - type: integer 
 	Parameter C_DEPTH bound to: 32 - type: integer 
@@ -730,9 +730,9 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_
 	Parameter C_EMPTY_PRE bound to: 5'b00000 
 	Parameter C_FULL bound to: 5'b11110 
 	Parameter C_FULL_PRE bound to: 5'b11010 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized2' (28#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_r_channel' (29#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v:21]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axi_register_slice__parameterized0' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized2' (28#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_r_channel' (29#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v:21]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axi_register_slice__parameterized0' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -825,7 +825,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axi_register_sl
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_axi2vector__parameterized0' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_axi2vector__parameterized0' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -917,33 +917,33 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_axi2vector__par
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_axi2vector__parameterized0' (29#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized3' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_axi2vector__parameterized0' (29#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized3' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 35 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized3' (29#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized4' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized3' (29#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized4' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized4' (29#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized5' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized4' (29#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized5' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 2 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized5' (29#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized6' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized5' (29#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized6' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 35 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized6' (29#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized7' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized6' (29#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized7' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 34 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized7' (29#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_vector2axi__parameterized0' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized7' (29#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_vector2axi__parameterized0' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -1035,15 +1035,15 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_vector2axi__par
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_vector2axi__parameterized0' (29#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axi_register_slice__parameterized0' (29#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s' (30#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' (31#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
-INFO: [Synth 8-256] done synthesizing module 'design_gpio_led_auto_pc_0' (32#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_auto_pc_0/synth/design_gpio_led_auto_pc_0.v:57]
-WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_gpio_led_auto_pc_0' requires 59 connections, but only 57 given [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:845]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_8NEXE' (33#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:610]
-INFO: [Synth 8-256] done synthesizing module 'design_gpio_led_processing_system7_0_axi_periph_1' (34#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:305]
-INFO: [Synth 8-638] synthesizing module 'design_gpio_led_rst_processing_system7_0_100M_1' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/synth/design_gpio_led_rst_processing_system7_0_100M_1.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_vector2axi__parameterized0' (29#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_infrastructure_v1_1/cf21a66f/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axi_register_slice__parameterized0' (29#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s' (30#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' (31#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
+INFO: [Synth 8-256] done synthesizing module 'design_gpio_led_auto_pc_0' (32#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_auto_pc_0/synth/design_gpio_led_auto_pc_0.v:57]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_gpio_led_auto_pc_0' requires 59 connections, but only 57 given [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:845]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_8NEXE' (33#1) [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:610]
+INFO: [Synth 8-256] done synthesizing module 'design_gpio_led_processing_system7_0_axi_periph_1' (34#1) [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:305]
+INFO: [Synth 8-638] synthesizing module 'design_gpio_led_rst_processing_system7_0_100M_1' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/synth/design_gpio_led_rst_processing_system7_0_100M_1.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -1053,8 +1053,8 @@ INFO: [Synth 8-638] synthesizing module 'design_gpio_led_rst_processing_system7_
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/proc_sys_reset.vhd:140' bound to instance 'U0' of component 'proc_sys_reset' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/synth/design_gpio_led_rst_processing_system7_0_100M_1.vhd:120]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/proc_sys_reset.vhd:199]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'd:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/proc_sys_reset.vhd:140' bound to instance 'U0' of component 'proc_sys_reset' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/synth/design_gpio_led_rst_processing_system7_0_100M_1.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/proc_sys_reset.vhd:199]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -1064,16 +1064,16 @@ INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/longqi/zynq_Gpio
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'lpf' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'lpf' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:138]
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
 	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
-INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:34522' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:190]
-INFO: [Synth 8-638] synthesizing module 'SRL16' [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:34522]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:34522' bound to instance 'POR_SRL_I' of component 'SRL16' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:34522]
 	Parameter INIT bound to: 16'b0000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'SRL16' (35#1) [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:34522]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (35#1) [D:/App/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:34522]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
@@ -1081,19 +1081,19 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [/home/longqi
 	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (35#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (35#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
@@ -1101,31 +1101,31 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [/home/longqi
 	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (35#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (36#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:138]
-INFO: [Synth 8-638] synthesizing module 'sequence' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/sequence.vhd:146]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/upcnt_n.vhd:125]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (35#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (36#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'sequence' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/sequence.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/upcnt_n.vhd:125]
 	Parameter C_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (37#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/upcnt_n.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence' (38#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/sequence.vhd:146]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (39#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/proc_sys_reset.vhd:199]
-INFO: [Synth 8-256] done synthesizing module 'design_gpio_led_rst_processing_system7_0_100M_1' (40#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/synth/design_gpio_led_rst_processing_system7_0_100M_1.vhd:74]
-WARNING: [Synth 8-350] instance 'rst_processing_system7_0_100M' of module 'design_gpio_led_rst_processing_system7_0_100M_1' requires 10 connections, but only 7 given [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:295]
-INFO: [Synth 8-256] done synthesizing module 'design_gpio_led' (41#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:13]
-INFO: [Synth 8-256] done synthesizing module 'design_gpio_led_wrapper' (42#1) [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led_wrapper.v:12]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (37#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/upcnt_n.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence' (38#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/sequence.vhd:146]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (39#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/proc_sys_reset.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'design_gpio_led_rst_processing_system7_0_100M_1' (40#1) [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/synth/design_gpio_led_rst_processing_system7_0_100M_1.vhd:74]
+WARNING: [Synth 8-350] instance 'rst_processing_system7_0_100M' of module 'design_gpio_led_rst_processing_system7_0_100M_1' requires 10 connections, but only 7 given [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:295]
+INFO: [Synth 8-256] done synthesizing module 'design_gpio_led' (41#1) [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led.v:13]
+INFO: [Synth 8-256] done synthesizing module 'design_gpio_led_wrapper' (42#1) [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/hdl/design_gpio_led_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1087.770 ; gain = 304.723 ; free physical = 5868 ; free virtual = 6877
+Finished RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 426.957 ; gain = 250.160
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1135,7 +1135,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1087.770 ; gain = 304.723 ; free physical = 5863 ; free virtual = 6871
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 426.957 ; gain = 250.160
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1144,21 +1144,21 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/design_gpio_led_processing_system7_0_0.xdc] for cell 'design_gpio_led_i/processing_system7_0/inst'
-Finished Parsing XDC File [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/design_gpio_led_processing_system7_0_0.xdc] for cell 'design_gpio_led_i/processing_system7_0/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/design_gpio_led_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_gpio_led_wrapper_propImpl.xdc].
+Parsing XDC File [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/design_gpio_led_processing_system7_0_0.xdc] for cell 'design_gpio_led_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/design_gpio_led_processing_system7_0_0.xdc] for cell 'design_gpio_led_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_processing_system7_0_0/design_gpio_led_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_gpio_led_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_gpio_led_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/design_gpio_led_axi_gpio_0_0_board.xdc] for cell 'design_gpio_led_i/axi_gpio_0/U0'
-Finished Parsing XDC File [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/design_gpio_led_axi_gpio_0_0_board.xdc] for cell 'design_gpio_led_i/axi_gpio_0/U0'
-Parsing XDC File [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/design_gpio_led_axi_gpio_0_0.xdc] for cell 'design_gpio_led_i/axi_gpio_0/U0'
-Finished Parsing XDC File [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/design_gpio_led_axi_gpio_0_0.xdc] for cell 'design_gpio_led_i/axi_gpio_0/U0'
-Parsing XDC File [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/design_gpio_led_rst_processing_system7_0_100M_1_board.xdc] for cell 'design_gpio_led_i/rst_processing_system7_0_100M'
-Finished Parsing XDC File [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/design_gpio_led_rst_processing_system7_0_100M_1_board.xdc] for cell 'design_gpio_led_i/rst_processing_system7_0_100M'
-Parsing XDC File [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/design_gpio_led_rst_processing_system7_0_100M_1.xdc] for cell 'design_gpio_led_i/rst_processing_system7_0_100M'
-Finished Parsing XDC File [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/design_gpio_led_rst_processing_system7_0_100M_1.xdc] for cell 'design_gpio_led_i/rst_processing_system7_0_100M'
-Parsing XDC File [/home/longqi/zynq_Gpio/zynq_Gpio.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/longqi/zynq_Gpio/zynq_Gpio.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/longqi/zynq_Gpio/zynq_Gpio.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_gpio_led_wrapper_propImpl.xdc].
+Parsing XDC File [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/design_gpio_led_axi_gpio_0_0_board.xdc] for cell 'design_gpio_led_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/design_gpio_led_axi_gpio_0_0_board.xdc] for cell 'design_gpio_led_i/axi_gpio_0/U0'
+Parsing XDC File [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/design_gpio_led_axi_gpio_0_0.xdc] for cell 'design_gpio_led_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_axi_gpio_0_0/design_gpio_led_axi_gpio_0_0.xdc] for cell 'design_gpio_led_i/axi_gpio_0/U0'
+Parsing XDC File [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/design_gpio_led_rst_processing_system7_0_100M_1_board.xdc] for cell 'design_gpio_led_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/design_gpio_led_rst_processing_system7_0_100M_1_board.xdc] for cell 'design_gpio_led_i/rst_processing_system7_0_100M'
+Parsing XDC File [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/design_gpio_led_rst_processing_system7_0_100M_1.xdc] for cell 'design_gpio_led_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/design_gpio_led_rst_processing_system7_0_100M_1.xdc] for cell 'design_gpio_led_i/rst_processing_system7_0_100M'
+Parsing XDC File [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_gpio_led_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_gpio_led_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
@@ -1167,22 +1167,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 60 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1322.777 ; gain = 0.000 ; free physical = 5619 ; free virtual = 6672
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 662.711 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1322.781 ; gain = 539.734 ; free physical = 5617 ; free virtual = 6670
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:55 . Memory (MB): peak = 662.711 ; gain = 485.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1322.781 ; gain = 539.734 ; free physical = 5617 ; free virtual = 6670
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:55 . Memory (MB): peak = 662.711 ; gain = 485.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for design_gpio_led_i/processing_system7_0/inst. (constraint file  /home/longqi/zynq_Gpio/zynq_Gpio.runs/synth_1/dont_touch.xdc, line 23).
-Applied set_property DONT_TOUCH = true for design_gpio_led_i/axi_gpio_0/U0. (constraint file  /home/longqi/zynq_Gpio/zynq_Gpio.runs/synth_1/dont_touch.xdc, line 26).
+Applied set_property DONT_TOUCH = true for design_gpio_led_i/processing_system7_0/inst. (constraint file  D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.runs/synth_1/dont_touch.xdc, line 23).
+Applied set_property DONT_TOUCH = true for design_gpio_led_i/axi_gpio_0/U0. (constraint file  D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.runs/synth_1/dont_touch.xdc, line 26).
 Applied set_property DONT_TOUCH = true for design_gpio_led_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_gpio_led_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_gpio_led_i/processing_system7_0. (constraint file  auto generated constraint, line ).
@@ -1190,15 +1190,15 @@ Applied set_property DONT_TOUCH = true for design_gpio_led_i/processing_system7_
 Applied set_property DONT_TOUCH = true for design_gpio_led_i/processing_system7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_gpio_led_i/rst_processing_system7_0_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1322.781 ; gain = 539.734 ; free physical = 5617 ; free virtual = 6670
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:56 . Memory (MB): peak = 662.711 ; gain = 485.914
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/sequence.vhd:222]
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/sequence.vhd:222]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1322.781 ; gain = 539.734 ; free physical = 5623 ; free virtual = 6676
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:57 . Memory (MB): peak = 662.711 ; gain = 485.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1477,17 +1477,17 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1322.781 ; gain = 539.734 ; free physical = 5624 ; free virtual = 6676
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:57 . Memory (MB): peak = 662.711 ; gain = 485.914
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:608]
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/longqi/zynq_Gpio/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
+INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:608]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1322.781 ; gain = 539.734 ; free physical = 5623 ; free virtual = 6675
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 662.711 ; gain = 485.914
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1322.781 ; gain = 539.734 ; free physical = 5623 ; free virtual = 6675
+Finished Parallel Reinference  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 662.711 ; gain = 485.914
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1498,16 +1498,16 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1322.785 ; gain = 539.738 ; free physical = 5621 ; free virtual = 6676
+Finished Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:59 . Memory (MB): peak = 662.711 ; gain = 485.914
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1322.785 ; gain = 539.738 ; free physical = 5621 ; free virtual = 6676
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:59 . Memory (MB): peak = 662.711 ; gain = 485.914
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1322.785 ; gain = 539.738 ; free physical = 5621 ; free virtual = 6676
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:59 . Memory (MB): peak = 662.711 ; gain = 485.914
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -1515,10 +1515,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1476.777 ; gain = 693.730 ; free physical = 5457 ; free virtual = 6519
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:09 . Memory (MB): peak = 809.426 ; gain = 632.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1494.785 ; gain = 711.738 ; free physical = 5438 ; free virtual = 6501
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:09 . Memory (MB): peak = 826.461 ; gain = 649.664
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1631,7 +1631,7 @@ INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_
 INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5 ) is unused and will be removed from module design_gpio_led_rst_processing_system7_0_100M_1.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1510.801 ; gain = 727.754 ; free physical = 5424 ; free virtual = 6486
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:01:11 . Memory (MB): peak = 844.172 ; gain = 667.375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1671,7 +1671,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axili
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1510.801 ; gain = 727.754 ; free physical = 5425 ; free virtual = 6488
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:12 . Memory (MB): peak = 844.172 ; gain = 667.375
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1684,7 +1684,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1510.801 ; gain = 727.754 ; free physical = 5425 ; free virtual = 6488
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:12 . Memory (MB): peak = 844.172 ; gain = 667.375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1696,13 +1696,13 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1510.801 ; gain = 727.754 ; free physical = 5425 ; free virtual = 6488
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:01:12 . Memory (MB): peak = 844.172 ; gain = 667.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1510.801 ; gain = 727.754 ; free physical = 5425 ; free virtual = 6488
+Start Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:01:12 . Memory (MB): peak = 844.172 ; gain = 667.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1510.801 ; gain = 727.754 ; free physical = 5425 ; free virtual = 6488
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:01:12 . Memory (MB): peak = 844.172 ; gain = 667.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1808,11 +1808,11 @@ Report Instance Areas:
 |44    |          SEQ_COUNTER                              |upcnt_n                                                     |    14|
 +------+---------------------------------------------------+------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1510.801 ; gain = 727.754 ; free physical = 5425 ; free virtual = 6488
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:12 . Memory (MB): peak = 844.172 ; gain = 667.375
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1510.801 ; gain = 368.309 ; free physical = 5425 ; free virtual = 6488
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1510.801 ; gain = 727.754 ; free physical = 5425 ; free virtual = 6488
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:47 . Memory (MB): peak = 844.172 ; gain = 357.578
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:12 . Memory (MB): peak = 844.172 ; gain = 667.375
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 99 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1827,6 +1827,6 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 343 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1510.805 ; gain = 612.324 ; free physical = 5423 ; free virtual = 6488
-report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1542.820 ; gain = 0.000 ; free physical = 5420 ; free virtual = 6485
-INFO: [Common 17-206] Exiting Vivado at Fri Sep 18 10:19:21 2015...
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:11 . Memory (MB): peak = 844.172 ; gain = 597.520
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 844.172 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 16:33:34 2015...

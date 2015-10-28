@@ -1318,3 +1318,51 @@ con
 
 17:04:20 INFO  : Disconnected from the channel tcfchan#1.
 17:04:22 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:49:38 INFO  : Launching XSDB server: xsdb.bat -s D:/App/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+09:49:43 INFO  : XSDB server has started successfully.
+09:50:43 ERROR : The Hardware Project referenced by this BSP (gpio_led_bsp) was not found in this workspace. As a result, this BSP will not build properly. To fix this error, please import the associated hardware project or recreate a new BSP targeting an existing hardware platform.
+09:51:18 INFO  : No changes in MSS file content so not generating sources.
+09:52:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:54:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:54:33 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:54:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:57:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:57:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248471522" && level==0} -index 1' command is executed.
+09:58:01 INFO  : FPGA configured successfully with bitstream "D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk/design_gpio_led_wrapper_hw_platform_1/design_gpio_led_wrapper.bit"
+09:58:11 INFO  : ps7_init is completed.
+09:58:11 INFO  : ps7_post_config is completed.
+09:58:11 WARN  : Error clearing Zynq reset status. Cannot write to target
+
+
+    AP transaction error (DP CTRL_STAT=0xf0000021)
+    Error Address = 0xf8000008, Size = 0x00000004
+
+
+09:58:11 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+09:59:03 INFO  : No changes in MSS file content so not generating sources.
+10:05:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248471522" && level==0} -index 1' command is executed.
+10:05:45 INFO  : FPGA configured successfully with bitstream "D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk/design_gpio_led_wrapper_hw_platform_1/design_gpio_led_wrapper.bit"
+10:05:51 INFO  : ps7_init is completed.
+10:05:51 INFO  : ps7_post_config is completed.
+10:05:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:09:22 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:09:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:09:25 ERROR : Port COM6 is already in use.
+10:09:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:09:42 INFO  : Processor reset is completed for ps7_cortexa9_0

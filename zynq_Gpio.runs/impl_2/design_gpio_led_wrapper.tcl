@@ -56,7 +56,7 @@ set rc [catch {
   set_property parent.project_path D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.xpr [current_project]
   set_property ip_repo_paths {
   d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.cache/ip
-  d:/Desktop/LED_Blinking_on_ZedBoard/ip_repo
+  D:/Desktop/LED_Blinking_on_ZedBoard/ip_repo
 } [current_project]
   set_property ip_output_repo d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.cache/ip [current_project]
   add_files -quiet D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.runs/synth_1/design_gpio_led_wrapper.dcp

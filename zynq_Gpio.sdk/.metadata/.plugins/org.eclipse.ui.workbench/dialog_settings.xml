@@ -4,6 +4,8 @@
 		<item value="196" key="DIALOG_X_ORIGIN"/>
 		<item value="17" key="DIALOG_Y_ORIGIN"/>
 	</section>
+	<section name="org.eclipse.ui.preferences.keysPreferencePage">
+	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="879" key="dialogHeight"/>
 		<item value="1392" key="dialogWidth"/>
@@ -16,11 +18,28 @@
 		<list key="textArray">
 		</list>
 	</section>
+	<section name="NewWizardAction">
+		<item value="com.xilinx.sdk.appwiz.AppWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.xilinx.sdk.ui.category.newWizards"/>
+		</list>
+	</section>
 	<section name="InstallationDialogSettings">
 		<item value="798" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="828" key="DIALOG_HEIGHT"/>
 		<item value="60" key="DIALOG_X_ORIGIN"/>
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.cdt.ui.importWizardCategory"/>
+			<item value="org.eclipse.equinox.p2.category"/>
+			<item value="org.eclipse.rse.importexport.importWizards"/>
+			<item value="org.eclipse.debug.ui"/>
+			<item value="org.eclipse.team.ui.importWizards"/>
+		</list>
 	</section>
 </section>

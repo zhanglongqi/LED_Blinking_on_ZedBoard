@@ -4,9 +4,7 @@
   **** IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 
-source /home/longqi/zynq_Gpio/zynq_Gpio.hw/webtalk/labtool_webtalk.tcl -notrace
-
-    while executing
-"webtalk_transmit -clientid 1016689883 -regid "211045641_1777508189_210606449_827" -xml /home/longqi/zynq_Gpio/zynq_Gpio.hw/webtalk/usage_statistics_ex..."
-    (file "/home/longqi/zynq_Gpio/zynq_Gpio.hw/webtalk/labtool_webtalk.tcl" line 26)
-INFO: [Common 17-206] Exiting Webtalk at Sat Sep 19 15:49:17 2015...
+source D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Wed Oct 28 10:42:13 2015. For additional details about this file, please refer to the WebTalk help file at D:/App/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 60.996 ; gain = 0.004
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 28 10:42:13 2015...

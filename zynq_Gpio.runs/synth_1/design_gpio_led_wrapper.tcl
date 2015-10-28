@@ -24,6 +24,7 @@ set_property used_in_implementation false [get_files -all d:/Desktop/LED_Blinkin
 set_property used_in_implementation false [get_files -all d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/design_gpio_led_rst_processing_system7_0_100M_1_board.xdc]
 set_property used_in_implementation false [get_files -all d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/design_gpio_led_rst_processing_system7_0_100M_1.xdc]
 set_property used_in_implementation false [get_files -all d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_rst_processing_system7_0_100M_1/design_gpio_led_rst_processing_system7_0_100M_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_xbar_0/design_gpio_led_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/ip/design_gpio_led_auto_pc_0/design_gpio_led_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/design_gpio_led_ooc.xdc]
 set_property is_locked true [get_files D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.srcs/sources_1/bd/design_gpio_led/design_gpio_led.bd]

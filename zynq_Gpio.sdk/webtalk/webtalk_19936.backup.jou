@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# 
+# Start of session at: Sun Oct 11 17:04:24 2015
+# Process ID: 34512
+# Log file: D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk/webtalk/webtalk.log
+# Journal file: D:/Desktop/LED_Blinking_on_ZedBoard/zynq_Gpio.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

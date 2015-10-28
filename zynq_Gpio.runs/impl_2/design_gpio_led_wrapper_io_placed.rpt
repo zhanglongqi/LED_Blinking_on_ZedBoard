@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.2.1 (win64) Build 1302555 Wed Aug  5 13:06:02 MDT 2015
-| Date         : Sun Oct 11 22:42:55 2015
+| Date         : Wed Oct 28 10:21:38 2015
 | Host         : LQ running 64-bit major release  (build 9200)
 | Command      : report_io -file design_gpio_led_wrapper_io_placed.rpt
 | Design       : design_gpio_led_wrapper
